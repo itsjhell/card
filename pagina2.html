@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentzoin's Dzay</title>
+	
+    <link rel="stylesheet" href="general.css">
+    <script>
+        function handleClick(response) {
+            if (response === 'yes') {
+                alert("thonks");
+                window.location.href = 'card.html';
+            } else {
+                window.location.href = 'page3.html';
+            }
+        }
+    </script>   
+</head>
+<body>
+    <p>I was wondering if you could please be my Valentzoin. <br>
+		<IMG SRC="cat.gif">
+	<p> So what do you say. </p>
+	<IMG SRC="eyes.png"><div class="button-container">
+     <div class="button-container">
+        <button onclick="handleClick('yes')">Yes</button>
+        <button onclick="handleClick('no')">No</button>
+    </div>
+    </div>
+</body>
+</html>
