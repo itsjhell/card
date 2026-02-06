@@ -80,30 +80,34 @@
     }
 
     @media (max-width: 600px) {
+
         .card {
-            width: 90%;
+            width: 80%;          /* ora la card lascia margini laterali */
+            max-width: 350px;    /* non diventa gigante su tablet */
             padding: 30px 20px;
             border-radius: 25px;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;     /* titolo leggibile su mobile */
         }
 
         button {
-            font-size: 1.6rem;
-            padding: 18px 28px;
+            font-size: 2rem;     /* bottoni grandi */
+            padding: 20px 35px;  /* facili da tappare */
         }
 
         .buttons {
-            height: 120px;
+            height: 140px;       /* più spazio verticale per muovere i bottoni */
         }
 
         #message {
-            font-size: 1.8rem;
+            font-size: 2rem;     /* messaggio leggibile */
             padding-bottom: 20px;
         }
+
     }
+
 
 </style>
 </head>
