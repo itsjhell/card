@@ -78,6 +78,33 @@
         from { transform: translateX(-2px); }
         to { transform: translateX(2px); }
     }
+
+    @media (max-width: 600px) {
+        .card {
+            width: 90%;
+            padding: 30px 20px;
+            border-radius: 25px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        button {
+            font-size: 1.6rem;
+            padding: 18px 28px;
+        }
+
+        .buttons {
+            height: 120px;
+        }
+
+        #message {
+            font-size: 1.8rem;
+            padding-bottom: 20px;
+        }
+    }
+
 </style>
 </head>
 <body>
@@ -99,7 +126,7 @@
     const message = document.getElementById("message");
     const card = document.querySelector(".card");
 
-    let size = 2;
+    let size = 1.8;
     let escapeCount = 0;
     let maxEscapes = getNewMaxEscapes();
 
@@ -140,8 +167,8 @@
 
         // ora è cliccabile
         message.textContent = "Fook yah 🖕 Are yah sure?";
-        size += 10;
-        message.style.fontSize = size + "px";
+        size += 0.6;
+        message.style.fontSize = size + "rem";
 
         // reset posizione
         noBtn.style.left = baseLeft;
